@@ -40,14 +40,14 @@ function App() {
   }
 
   const searchMovies =async (params, pageNo) => {
-    if (pageNo !== "") console.log(pageNo + " " + params );
+    
     if(params !== "" && params.length > 2) {
       setSearchText(params);
-      //console.log("current Page: " + currentPage);
+      
       let page = currentPage;
       if(pageNo !== "" || pageNo !== null || pageNo !== undefined) {
         page=pageNo;
-        console.log(`pageNo from app : ${page}`);
+        
         setCurrentPage(pageNo);
       }
       const url = `${api + params}&page=${page}`;

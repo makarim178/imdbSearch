@@ -27,14 +27,14 @@ const PageSection = ({totalPages, searchMovies, searchText, currentPage}) => {
                 setBackPage("0");
             }
         
-            console.log(`pageStart: ${pageStart}, pageEnd: ${pageEnd}`);
+            
 
           if(parseInt(pageSelected) + 10 < parseInt(totalPages) ) {
               
 
                   let floorVal = (Math.floor(parseInt(pageSelected) / 10) * 10) +11 ;
                   setForwardPage(floorVal);
-                  console.log("floorval:" + floorVal);
+                  
               
           } else {
               setForwardPage(totalPages);
@@ -43,10 +43,10 @@ const PageSection = ({totalPages, searchMovies, searchText, currentPage}) => {
           if(pageEnd > totalPages) pageEnd = totalPages;
           var i;
           const pageArr = [];
-          //console.log(pageStart);
+
           for(i = pageStart; i<= pageEnd; i++) {
 
-           // console.log('am I looping?');
+
             const pageSelected = (currentPage === i) ? true : false
             const pages = {
               id: i,
@@ -55,9 +55,9 @@ const PageSection = ({totalPages, searchMovies, searchText, currentPage}) => {
             }
             pageArr.push(pages);
           }
-          //setCurrentPage(parseInt(pageSelected));
+          
           setPageArray(pageArr);
-         //console.log(pageArr);
+         
         
       }
 
