@@ -1,0 +1,34 @@
+@import "../../../global.scss";
+
+.resMainContent{
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+
+    .movieContainer{
+        flex: 9;
+        width: 100%;
+        border-radius: 2px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .nominationContainer{
+        flex: 3;
+        margin: 5px 20px;
+        padding: 10px;
+        border-radius: 3px;
+        background-color: rgb(247, 247, 247);
+    box-shadow: 0 0 2px 0 rgba($color: #000000, $alpha: 0.25),1px 1px 5px 0 rgba($color: #000000, $alpha: 0.15);
+        max-height: 700px;
+
+        .nomConTitle{
+            padding: 10px;
+
+        }
+    }
+
+}

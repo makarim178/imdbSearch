@@ -1,0 +1,30 @@
+@import "../../global.scss";
+
+.nominationCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: solid 1px rgb(216, 216, 216);
+    margin: 5px 0 ;
+    
+    .desc{
+        display: flex;
+        align-items: center;
+        .nomCardImg{
+            margin-right: 10px;
+            img{
+                height: 75px;
+            }
+        }
+    }
+    .actionNom{
+        cursor: pointer;
+        color: rgb(194, 0, 0);
+
+        &:hover{
+            color: red;
+        }
+    }
+
+}

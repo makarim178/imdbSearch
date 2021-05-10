@@ -1,0 +1,33 @@
+@import "../../global.scss";
+
+.pageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .pgCard{
+        margin: 2px;
+        border: 1px solid rgb(201, 201, 201);
+        cursor: pointer;
+    }
+
+    .pgActive{
+        border: none;
+        color: rgb(0, 73, 0);
+    }
+
+    span{
+        margin: 10px;
+        cursor: pointer;
+    }
+}
+
+.pageDesc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .totPage{
+        padding: 10px;
+    }
+}
+

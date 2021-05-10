@@ -1,0 +1,92 @@
+@import "../../../global.scss";
+
+.movieCard{  
+
+    display: flex;    
+    padding: 10px;
+    margin: 5px;
+    border-radius: 3px;
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0 0 2px 0 rgba($color: #000000, $alpha: 0.25),1px 1px 5px 0 rgba($color: #000000, $alpha: 0.15);
+    position:relative;
+    width: 150px;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 2s ease-in-out;
+
+
+    .posterDiv{
+        img{
+            width: auto;
+            height: 225px;
+        }
+    }
+
+    &:hover{
+        .titleDiv{
+            transform: translateY(0);
+        }
+    }
+
+    .titleDiv{
+        position: absolute;
+        bottom: 0;
+        transform: translateY(250px);
+        color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba($color: #000, $alpha: 0.5);
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        
+        backdrop-filter: blur(5px);
+        box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.4);
+        height: 100%;
+
+        .movieDescDiv{
+            padding: 20px;
+        }
+
+        .otherDiv{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            margin-top: 10px;
+            
+            
+            .yearDiv{
+                h4{
+                    font-size: 12px;
+                }
+
+                margin-right: 20px;
+                
+            }
+
+            
+
+            .btnDiv{
+                border: solid 1px white;
+                padding: 5px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 12px;
+
+                &:hover{
+                    border: solid 1px greenyellow;
+                    color: yellowgreen;
+                }
+
+            }
+
+            .activenominate{
+                border: solid 1px greenyellow !important;
+            }
+        }
+
+    }
+
+}
+
